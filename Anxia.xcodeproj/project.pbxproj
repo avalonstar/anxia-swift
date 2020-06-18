@@ -13,9 +13,13 @@
 		E3942DA1249BDE930055273C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3942D94249BDE930055273C /* Data.swift */; };
 		E3942DA2249BDE930055273C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3942D96249BDE930055273C /* Preview Assets.xcassets */; };
 		E3942DA3249BDE930055273C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3942D99249BDE930055273C /* LaunchScreen.storyboard */; };
-		E3942DA4249BDE930055273C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3942D9A249BDE930055273C /* Info.plist */; };
 		E3942DA5249BDE930055273C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3942D9C249BDE930055273C /* AppDelegate.swift */; };
 		E3942DA6249BDE930055273C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3942D9D249BDE930055273C /* SceneDelegate.swift */; };
+		E3942DA8249BE1690055273C /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3942DA7249BE1690055273C /* Tweet.swift */; };
+		E3942DAA249BE45B0055273C /* TweetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3942DA9249BE45B0055273C /* TweetRow.swift */; };
+		E3942DAC249BE5EC0055273C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3942DAB249BE5EC0055273C /* User.swift */; };
+		E3B6FA20249BE8110068E187 /* TweetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6FA1F249BE8110068E187 /* TweetList.swift */; };
+		E3B6FA22249BEFB40068E187 /* TweetDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6FA21249BEFB40068E187 /* TweetDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,11 @@
 		E3942D9A249BDE930055273C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3942D9C249BDE930055273C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3942D9D249BDE930055273C /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E3942DA7249BE1690055273C /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		E3942DA9249BE45B0055273C /* TweetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRow.swift; sourceTree = "<group>"; };
+		E3942DAB249BE5EC0055273C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E3B6FA1F249BE8110068E187 /* TweetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetList.swift; sourceTree = "<group>"; };
+		E3B6FA21249BEFB40068E187 /* TweetDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,9 @@
 		E3942D8D249BDE930055273C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E3B6FA25249BF1730068E187 /* Screens */,
+				E3B6FA24249BF01A0068E187 /* Molecules */,
+				E3B6FA23249BF0110068E187 /* Atoms */,
 				E3942D8E249BDE930055273C /* Home */,
 				E3942D90249BDE930055273C /* Resources */,
 				E3942D93249BDE930055273C /* Models */,
@@ -76,7 +88,9 @@
 		E3942D8E249BDE930055273C /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				E3942D8F249BDE930055273C /* ContentView.swift */,
+				E3942DA9249BE45B0055273C /* TweetRow.swift */,
+				E3B6FA1F249BE8110068E187 /* TweetList.swift */,
+				E3B6FA21249BEFB40068E187 /* TweetDetail.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -94,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				E3942D94249BDE930055273C /* Data.swift */,
+				E3942DA7249BE1690055273C /* Tweet.swift */,
+				E3942DAB249BE5EC0055273C /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -122,6 +138,28 @@
 				E3942D9C249BDE930055273C /* AppDelegate.swift */,
 			);
 			path = Startup;
+			sourceTree = "<group>";
+		};
+		E3B6FA23249BF0110068E187 /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Atoms;
+			sourceTree = "<group>";
+		};
+		E3B6FA24249BF01A0068E187 /* Molecules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Molecules;
+			sourceTree = "<group>";
+		};
+		E3B6FA25249BF1730068E187 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E3942D8F249BDE930055273C /* ContentView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +223,6 @@
 				E3942DA0249BDE930055273C /* Assets.xcassets in Resources */,
 				E3942DA3249BDE930055273C /* LaunchScreen.storyboard in Resources */,
 				E3942DA2249BDE930055273C /* Preview Assets.xcassets in Resources */,
-				E3942DA4249BDE930055273C /* Info.plist in Resources */,
 				E3942D9F249BDE930055273C /* tweetData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,9 +235,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3942DA5249BDE930055273C /* AppDelegate.swift in Sources */,
+				E3942DA8249BE1690055273C /* Tweet.swift in Sources */,
 				E3942D9E249BDE930055273C /* ContentView.swift in Sources */,
 				E3942DA1249BDE930055273C /* Data.swift in Sources */,
 				E3942DA6249BDE930055273C /* SceneDelegate.swift in Sources */,
+				E3B6FA22249BEFB40068E187 /* TweetDetail.swift in Sources */,
+				E3942DAA249BE45B0055273C /* TweetRow.swift in Sources */,
+				E3942DAC249BE5EC0055273C /* User.swift in Sources */,
+				E3B6FA20249BE8110068E187 /* TweetList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +391,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Anxia.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Source/Preview Content\"";
 				DEVELOPMENT_TEAM = ZATH8Y2687;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
