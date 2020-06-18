@@ -16,9 +16,9 @@ struct TweetRow: View {
             Text(tweet.fullText)
             HStack {
                 VStack(alignment: .leading) {
-                    Text(tweet.user.name)
+                    Text(tweet.user.name).bold()
                     Text(tweet.user.screenName)
-                }
+                }.padding(.top)
                 Spacer()
             }
         }

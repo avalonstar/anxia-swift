@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E3942D9E249BDE930055273C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3942D8F249BDE930055273C /* ContentView.swift */; };
+		E3942D9E249BDE930055273C /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3942D8F249BDE930055273C /* Authentication.swift */; };
 		E3942D9F249BDE930055273C /* tweetData.json in Resources */ = {isa = PBXBuildFile; fileRef = E3942D91249BDE930055273C /* tweetData.json */; };
 		E3942DA0249BDE930055273C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3942D92249BDE930055273C /* Assets.xcassets */; };
 		E3942DA1249BDE930055273C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3942D94249BDE930055273C /* Data.swift */; };
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		E32435B8249B36FB007D3EB4 /* Anxia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anxia.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3942D8F249BDE930055273C /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E3942D8F249BDE930055273C /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		E3942D91249BDE930055273C /* tweetData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tweetData.json; sourceTree = "<group>"; };
 		E3942D92249BDE930055273C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3942D94249BDE930055273C /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		E3B6FA25249BF1730068E187 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				E3942D8F249BDE930055273C /* ContentView.swift */,
+				E3942D8F249BDE930055273C /* Authentication.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -236,7 +236,7 @@
 			files = (
 				E3942DA5249BDE930055273C /* AppDelegate.swift in Sources */,
 				E3942DA8249BE1690055273C /* Tweet.swift in Sources */,
-				E3942D9E249BDE930055273C /* ContentView.swift in Sources */,
+				E3942D9E249BDE930055273C /* Authentication.swift in Sources */,
 				E3942DA1249BDE930055273C /* Data.swift in Sources */,
 				E3942DA6249BDE930055273C /* SceneDelegate.swift in Sources */,
 				E3B6FA22249BEFB40068E187 /* TweetDetail.swift in Sources */,

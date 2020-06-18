@@ -12,12 +12,20 @@ struct TweetDetail: View {
     var tweet: Tweet
     
     var body: some View {
-        Text(tweet.fullText)
+        VStack(alignment: .leading) {
+            Text(tweet.fullText)
+            Text(tweet.user.name)
+                .bold()
+                .padding(.top)
+            Text("@\(tweet.user.screenName)")
+            Spacer()
+        }
+        .padding()
     }
 }
 
 struct TweetDetail_Previews: PreviewProvider {
     static var previews: some View {
-        TweetDetail(tweet: tweetData[3])
+        TweetDetail(tweet: tweetData[1])
     }
 }

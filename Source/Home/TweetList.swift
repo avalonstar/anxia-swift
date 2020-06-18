@@ -17,6 +17,10 @@ struct TweetList: View {
                 }
             }
             .navigationBarTitle(Text("Timeline"))
+            .navigationBarItems(
+                leading: Button("Menu") { print("Menu") },
+                trailing: Button("Tweet") { print("Tweet") }
+            )
         }
     }
 }
