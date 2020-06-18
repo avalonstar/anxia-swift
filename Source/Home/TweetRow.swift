@@ -17,7 +17,7 @@ struct TweetRow: View {
             HStack {
                 VStack(alignment: .leading) {
                     Text(tweet.user.name).bold()
-                    Text(tweet.user.screenName)
+                    Text("@\(tweet.user.screenName)")
                 }.padding(.top)
                 Spacer()
             }

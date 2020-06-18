@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct TweetList: View {
+    @State var showingForm = false
+    
     var body: some View {
         NavigationView {
             List(tweetData) { tweet in
@@ -19,7 +21,7 @@ struct TweetList: View {
             .navigationBarTitle(Text("Timeline"))
             .navigationBarItems(
                 leading: Button("Menu") { print("Menu") },
-                trailing: Button("Tweet") { print("Tweet") }
+                trailing: Button(action: { self.showingForm.toggle() }) { Text("Tweet")}.sheet(isPresented: $showingForm) { TweetForm() }
             )
         }
     }
@@ -27,6 +29,6 @@ struct TweetList: View {
 
 struct TweetList_Previews: PreviewProvider {
     static var previews: some View {
-        TweetList()
+        TweetList().environment(\.colorScheme, .dark)
     }
 }

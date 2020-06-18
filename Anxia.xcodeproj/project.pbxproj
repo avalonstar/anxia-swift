@@ -20,6 +20,7 @@
 		E3942DAC249BE5EC0055273C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3942DAB249BE5EC0055273C /* User.swift */; };
 		E3B6FA20249BE8110068E187 /* TweetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6FA1F249BE8110068E187 /* TweetList.swift */; };
 		E3B6FA22249BEFB40068E187 /* TweetDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6FA21249BEFB40068E187 /* TweetDetail.swift */; };
+		E3B6FA27249C25170068E187 /* TweetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6FA26249C25170068E187 /* TweetForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		E3942DAB249BE5EC0055273C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E3B6FA1F249BE8110068E187 /* TweetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetList.swift; sourceTree = "<group>"; };
 		E3B6FA21249BEFB40068E187 /* TweetDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetail.swift; sourceTree = "<group>"; };
+		E3B6FA26249C25170068E187 /* TweetForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				E3942DA9249BE45B0055273C /* TweetRow.swift */,
 				E3B6FA1F249BE8110068E187 /* TweetList.swift */,
 				E3B6FA21249BEFB40068E187 /* TweetDetail.swift */,
+				E3B6FA26249C25170068E187 /* TweetForm.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				E3942D9E249BDE930055273C /* Authentication.swift in Sources */,
 				E3942DA1249BDE930055273C /* Data.swift in Sources */,
 				E3942DA6249BDE930055273C /* SceneDelegate.swift in Sources */,
+				E3B6FA27249C25170068E187 /* TweetForm.swift in Sources */,
 				E3B6FA22249BEFB40068E187 /* TweetDetail.swift in Sources */,
 				E3942DAA249BE45B0055273C /* TweetRow.swift in Sources */,
 				E3942DAC249BE5EC0055273C /* User.swift in Sources */,
