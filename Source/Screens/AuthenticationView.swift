@@ -6,22 +6,20 @@
 //  Copyright © 2020 Avalonstar Inc. All rights reserved.
 //
 
+import Alamofire
 import SwiftUI
 
 struct AuthenticationView: View {
     var body: some View {
         VStack {
-            Button(action: {}) {
-                Text("Sign in with Twitter")
-                    .bold()
-                    .foregroundColor(.white)
+            AuthenticationButton().onTapGesture {
+                self.startAuthentication()
             }
-            .frame(minWidth: 0, maxWidth: .infinity)
-            .padding()
-            .background(Color("TwitterBlue"))
-            .cornerRadius(4)
-            .padding(.horizontal)
         }
+    }
+    
+    func startAuthentication() {
+        print("Start Authentication.")
     }
 }
 
