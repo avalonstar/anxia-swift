@@ -14,10 +14,14 @@ struct TweetDetail: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(tweet.fullText)
+                .font(.system(.headline))
+                .fontWeight(.light)
+                
             Text(tweet.user.name)
                 .bold()
                 .padding(.top)
             Text("@\(tweet.user.screenName)")
+                .foregroundColor(Color.gray)
             Spacer()
         }
         .padding()

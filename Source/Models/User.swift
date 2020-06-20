@@ -13,6 +13,7 @@ struct User: Codable {
     var idStr: String
     var name: String
     var screenName: String
+    var profileImageUrlHttps: String
 }
 
 
