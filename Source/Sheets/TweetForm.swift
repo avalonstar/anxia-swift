@@ -9,8 +9,18 @@
 import SwiftUI
 
 struct TweetForm: View {
+    @Environment(\.presentationMode) var presentationMode
+    @State private var tweet = ""
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack(alignment: .leading) {
+                TextField("What's on your mind?", text: $tweet).padding()
+                Spacer()
+            }
+            .navigationBarTitle(Text("Compose"), displayMode: .inline)
+            .navigationBarItems(leading: Button("Cancel", action: { self.presentationMode.wrappedValue.dismiss() }), trailing: Button("Tweet", action: {}))
+        }
     }
 }
 
