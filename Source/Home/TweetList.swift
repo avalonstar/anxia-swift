@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct TweetList: View {
+    @Environment(\.presentationMode) var presentationMode
     @State var showingForm = false
     
     var body: some View {
