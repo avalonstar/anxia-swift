@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3499F02249D03D6002E0644 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3499F01249D03D6002E0644 /* Token.swift */; };
 		E3942D9E249BDE930055273C /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3942D8F249BDE930055273C /* AuthenticationView.swift */; };
 		E3942D9F249BDE930055273C /* tweetData.json in Resources */ = {isa = PBXBuildFile; fileRef = E3942D91249BDE930055273C /* tweetData.json */; };
 		E3942DA0249BDE930055273C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3942D92249BDE930055273C /* Assets.xcassets */; };
@@ -18,19 +19,24 @@
 		E3942DA8249BE1690055273C /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3942DA7249BE1690055273C /* Tweet.swift */; };
 		E3942DAA249BE45B0055273C /* TweetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3942DA9249BE45B0055273C /* TweetRow.swift */; };
 		E3942DAC249BE5EC0055273C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3942DAB249BE5EC0055273C /* User.swift */; };
+		E3ACE11B249E759E00EEA760 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = E3ACE11A249E759E00EEA760 /* URLImage */; };
+		E3ACE11E249E75D900EEA760 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E3ACE11D249E75D900EEA760 /* Alamofire */; };
 		E3B6FA20249BE8110068E187 /* TweetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6FA1F249BE8110068E187 /* TweetList.swift */; };
 		E3B6FA22249BEFB40068E187 /* TweetDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6FA21249BEFB40068E187 /* TweetDetail.swift */; };
 		E3B6FA27249C25170068E187 /* TweetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6FA26249C25170068E187 /* TweetForm.swift */; };
+		E3B6FA2D249C7A150068E187 /* AuthenticationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6FA2C249C7A150068E187 /* AuthenticationButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E32435B8249B36FB007D3EB4 /* Anxia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anxia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3499EF9249C8A38002E0644 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
+		E3499F01249D03D6002E0644 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		E3942D8F249BDE930055273C /* AuthenticationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		E3942D91249BDE930055273C /* tweetData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tweetData.json; sourceTree = "<group>"; };
 		E3942D92249BDE930055273C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3942D94249BDE930055273C /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		E3942D96249BDE930055273C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E3942D98249BDE930055273C /* Anxia.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Anxia.entitlements; sourceTree = "<group>"; };
+		E3942D98249BDE930055273C /* Anxia.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = Anxia.entitlements; path = "Source/Supporting Files/Anxia.entitlements"; sourceTree = SOURCE_ROOT; };
 		E3942D99249BDE930055273C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3942D9A249BDE930055273C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3942D9C249BDE930055273C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,7 @@
 		E3B6FA1F249BE8110068E187 /* TweetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetList.swift; sourceTree = "<group>"; };
 		E3B6FA21249BEFB40068E187 /* TweetDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetail.swift; sourceTree = "<group>"; };
 		E3B6FA26249C25170068E187 /* TweetForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetForm.swift; sourceTree = "<group>"; };
+		E3B6FA2C249C7A150068E187 /* AuthenticationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3ACE11B249E759E00EEA760 /* URLImage in Frameworks */,
+				E3ACE11E249E75D900EEA760 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,9 +79,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E3499EFA249C90A7002E0644 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		E3942D8D249BDE930055273C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E3499EFA249C90A7002E0644 /* Services */,
+				E3B6FA2B249C6AB60068E187 /* Sheets */,
 				E3B6FA25249BF1730068E187 /* Screens */,
 				E3B6FA24249BF01A0068E187 /* Molecules */,
 				E3B6FA23249BF0110068E187 /* Atoms */,
@@ -83,6 +101,7 @@
 				E3942D97249BDE930055273C /* Supporting Files */,
 				E3942D9B249BDE930055273C /* Startup */,
 				E3942D9D249BDE930055273C /* SceneDelegate.swift */,
+				E3499EF9249C8A38002E0644 /* Config.xcconfig */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -93,7 +112,6 @@
 				E3942DA9249BE45B0055273C /* TweetRow.swift */,
 				E3B6FA1F249BE8110068E187 /* TweetList.swift */,
 				E3B6FA21249BEFB40068E187 /* TweetDetail.swift */,
-				E3B6FA26249C25170068E187 /* TweetForm.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -113,6 +131,7 @@
 				E3942D94249BDE930055273C /* Data.swift */,
 				E3942DA7249BE1690055273C /* Tweet.swift */,
 				E3942DAB249BE5EC0055273C /* User.swift */,
+				E3499F01249D03D6002E0644 /* Token.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -146,6 +165,7 @@
 		E3B6FA23249BF0110068E187 /* Atoms */ = {
 			isa = PBXGroup;
 			children = (
+				E3B6FA2C249C7A150068E187 /* AuthenticationButton.swift */,
 			);
 			path = Atoms;
 			sourceTree = "<group>";
@@ -165,6 +185,14 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		E3B6FA2B249C6AB60068E187 /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				E3B6FA26249C25170068E187 /* TweetForm.swift */,
+			);
+			path = Sheets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,14 +203,16 @@
 				E32435B4249B36FB007D3EB4 /* Sources */,
 				E32435B5249B36FB007D3EB4 /* Frameworks */,
 				E32435B6249B36FB007D3EB4 /* Resources */,
-				E3B6FA29249C55D60068E187 /* ShellScript */,
-				E3B6FA2A249C560D0068E187 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Anxia;
+			packageProductDependencies = (
+				E3ACE11A249E759E00EEA760 /* URLImage */,
+				E3ACE11D249E75D900EEA760 /* Alamofire */,
+			);
 			productName = Anxia;
 			productReference = E32435B8249B36FB007D3EB4 /* Anxia.app */;
 			productType = "com.apple.product-type.application";
@@ -211,6 +241,10 @@
 				Base,
 			);
 			mainGroup = E32435AF249B36FB007D3EB4;
+			packageReferences = (
+				E3ACE119249E759E00EEA760 /* XCRemoteSwiftPackageReference "url-image" */,
+				E3ACE11C249E75D900EEA760 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = E32435B9249B36FB007D3EB4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,45 +268,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		E3B6FA29249C55D60068E187 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"$(SRCROOT)/input.xcfilelist",
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-				"$(SRCROOT)/output.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-		E3B6FA2A249C560D0068E187 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings 2>/dev/null\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		E32435B4249B36FB007D3EB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -283,10 +278,12 @@
 				E3942D9E249BDE930055273C /* AuthenticationView.swift in Sources */,
 				E3942DA1249BDE930055273C /* Data.swift in Sources */,
 				E3942DA6249BDE930055273C /* SceneDelegate.swift in Sources */,
+				E3B6FA2D249C7A150068E187 /* AuthenticationButton.swift in Sources */,
 				E3B6FA27249C25170068E187 /* TweetForm.swift in Sources */,
 				E3B6FA22249BEFB40068E187 /* TweetDetail.swift in Sources */,
 				E3942DAA249BE45B0055273C /* TweetRow.swift in Sources */,
 				E3942DAC249BE5EC0055273C /* User.swift in Sources */,
+				E3499F02249D03D6002E0644 /* Token.swift in Sources */,
 				E3B6FA20249BE8110068E187 /* TweetList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,17 +409,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Anxia.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Source/Supporting Files/Anxia.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Source/Preview Content\"";
 				DEVELOPMENT_TEAM = ZATH8Y2687;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.avalonstar.Anxia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.avalonstar.anxia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -434,17 +435,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Anxia.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Source/Supporting Files/Anxia.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Source/Preview Content\"";
 				DEVELOPMENT_TEAM = ZATH8Y2687;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.avalonstar.Anxia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.avalonstar.anxia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -474,6 +479,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E3ACE119249E759E00EEA760 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.15;
+			};
+		};
+		E3ACE11C249E75D900EEA760 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E3ACE11A249E759E00EEA760 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3ACE119249E759E00EEA760 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		E3ACE11D249E75D900EEA760 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3ACE11C249E75D900EEA760 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E32435B0249B36FB007D3EB4 /* Project object */;
 }
