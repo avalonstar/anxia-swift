@@ -11,10 +11,10 @@ import SwiftUI
 struct TweetRow: View {
     var tweet: Tweet
     private var avatar: String
-    
+
     init(tweet: Tweet) {
         self.tweet = tweet
-        self.avatar = tweet.user.profileImageUrlHttps.replacingOccurrences(of: "_normal", with: "")
+        avatar = tweet.user.profileImageUrlHttps.replacingOccurrences(of: "_normal", with: "")
     }
 
     var body: some View {

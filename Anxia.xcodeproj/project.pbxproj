@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E3499F02249D03D6002E0644 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3499F01249D03D6002E0644 /* Token.swift */; };
+		E369B3F7249E789400A60E95 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E369B3F6249E789400A60E95 /* Avatar.swift */; };
+		E369B3FB249E8AF300A60E95 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E369B3FA249E8AF300A60E95 /* SafariView.swift */; };
+		E369B3FE249EC8A900A60E95 /* Codextended in Frameworks */ = {isa = PBXBuildFile; productRef = E369B3FD249EC8A900A60E95 /* Codextended */; };
+		E369B404249EDF3B00A60E95 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E369B403249EDF3B00A60E95 /* Authentication.swift */; };
+		E369B40D249F2E3600A60E95 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E369B40C249F2E3600A60E95 /* RootView.swift */; };
 		E3942D9E249BDE930055273C /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3942D8F249BDE930055273C /* AuthenticationView.swift */; };
 		E3942D9F249BDE930055273C /* tweetData.json in Resources */ = {isa = PBXBuildFile; fileRef = E3942D91249BDE930055273C /* tweetData.json */; };
 		E3942DA0249BDE930055273C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3942D92249BDE930055273C /* Assets.xcassets */; };
@@ -29,8 +33,10 @@
 
 /* Begin PBXFileReference section */
 		E32435B8249B36FB007D3EB4 /* Anxia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anxia.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3499EF9249C8A38002E0644 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
-		E3499F01249D03D6002E0644 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		E369B3F6249E789400A60E95 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
+		E369B3FA249E8AF300A60E95 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		E369B403249EDF3B00A60E95 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		E369B40C249F2E3600A60E95 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		E3942D8F249BDE930055273C /* AuthenticationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		E3942D91249BDE930055273C /* tweetData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tweetData.json; sourceTree = "<group>"; };
 		E3942D92249BDE930055273C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3ACE11B249E759E00EEA760 /* URLImage in Frameworks */,
+				E369B3FE249EC8A900A60E95 /* Codextended in Frameworks */,
 				E3ACE11E249E75D900EEA760 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,29 +86,36 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E3499EFA249C90A7002E0644 /* Services */ = {
+		E369B408249EEB4600A60E95 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Services;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E369B40B249F239E00A60E95 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E3B6FA23249BF0110068E187 /* Atoms */,
+				E3B6FA24249BF01A0068E187 /* Molecules */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		E3942D8D249BDE930055273C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E3499EFA249C90A7002E0644 /* Services */,
+				E3FCA1C624A014C2002468BA /* Services */,
+				E369B40B249F239E00A60E95 /* Components */,
+				E369B408249EEB4600A60E95 /* Helpers */,
 				E3B6FA2B249C6AB60068E187 /* Sheets */,
 				E3B6FA25249BF1730068E187 /* Screens */,
-				E3B6FA24249BF01A0068E187 /* Molecules */,
-				E3B6FA23249BF0110068E187 /* Atoms */,
 				E3942D8E249BDE930055273C /* Home */,
 				E3942D90249BDE930055273C /* Resources */,
 				E3942D93249BDE930055273C /* Models */,
 				E3942D95249BDE930055273C /* Preview Content */,
 				E3942D97249BDE930055273C /* Supporting Files */,
 				E3942D9B249BDE930055273C /* Startup */,
-				E3942D9D249BDE930055273C /* SceneDelegate.swift */,
-				E3499EF9249C8A38002E0644 /* Config.xcconfig */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -128,10 +142,10 @@
 		E3942D93249BDE930055273C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E369B403249EDF3B00A60E95 /* Authentication.swift */,
 				E3942D94249BDE930055273C /* Data.swift */,
 				E3942DA7249BE1690055273C /* Tweet.swift */,
 				E3942DAB249BE5EC0055273C /* User.swift */,
-				E3499F01249D03D6002E0644 /* Token.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -158,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				E3942D9C249BDE930055273C /* AppDelegate.swift */,
+				E3942D9D249BDE930055273C /* SceneDelegate.swift */,
 			);
 			path = Startup;
 			sourceTree = "<group>";
@@ -166,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				E3B6FA2C249C7A150068E187 /* AuthenticationButton.swift */,
+				E369B3F6249E789400A60E95 /* Avatar.swift */,
 			);
 			path = Atoms;
 			sourceTree = "<group>";
@@ -181,6 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				E3942D8F249BDE930055273C /* AuthenticationView.swift */,
+				E369B3FA249E8AF300A60E95 /* SafariView.swift */,
+				E369B40C249F2E3600A60E95 /* RootView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -191,6 +209,13 @@
 				E3B6FA26249C25170068E187 /* TweetForm.swift */,
 			);
 			path = Sheets;
+			sourceTree = "<group>";
+		};
+		E3FCA1C624A014C2002468BA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +237,7 @@
 			packageProductDependencies = (
 				E3ACE11A249E759E00EEA760 /* URLImage */,
 				E3ACE11D249E75D900EEA760 /* Alamofire */,
+				E369B3FD249EC8A900A60E95 /* Codextended */,
 			);
 			productName = Anxia;
 			productReference = E32435B8249B36FB007D3EB4 /* Anxia.app */;
@@ -244,6 +270,7 @@
 			packageReferences = (
 				E3ACE119249E759E00EEA760 /* XCRemoteSwiftPackageReference "url-image" */,
 				E3ACE11C249E75D900EEA760 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E369B3FC249EC8A900A60E95 /* XCRemoteSwiftPackageReference "Codextended" */,
 			);
 			productRefGroup = E32435B9249B36FB007D3EB4 /* Products */;
 			projectDirPath = "";
@@ -276,14 +303,17 @@
 				E3942DA5249BDE930055273C /* AppDelegate.swift in Sources */,
 				E3942DA8249BE1690055273C /* Tweet.swift in Sources */,
 				E3942D9E249BDE930055273C /* AuthenticationView.swift in Sources */,
+				E369B404249EDF3B00A60E95 /* Authentication.swift in Sources */,
+				E369B3FB249E8AF300A60E95 /* SafariView.swift in Sources */,
 				E3942DA1249BDE930055273C /* Data.swift in Sources */,
 				E3942DA6249BDE930055273C /* SceneDelegate.swift in Sources */,
 				E3B6FA2D249C7A150068E187 /* AuthenticationButton.swift in Sources */,
 				E3B6FA27249C25170068E187 /* TweetForm.swift in Sources */,
 				E3B6FA22249BEFB40068E187 /* TweetDetail.swift in Sources */,
+				E369B3F7249E789400A60E95 /* Avatar.swift in Sources */,
 				E3942DAA249BE45B0055273C /* TweetRow.swift in Sources */,
+				E369B40D249F2E3600A60E95 /* RootView.swift in Sources */,
 				E3942DAC249BE5EC0055273C /* User.swift in Sources */,
-				E3499F02249D03D6002E0644 /* Token.swift in Sources */,
 				E3B6FA20249BE8110068E187 /* TweetList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +511,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E369B3FC249EC8A900A60E95 /* XCRemoteSwiftPackageReference "Codextended" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnSundell/Codextended";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
 		E3ACE119249E759E00EEA760 /* XCRemoteSwiftPackageReference "url-image" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
@@ -500,6 +538,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E369B3FD249EC8A900A60E95 /* Codextended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E369B3FC249EC8A900A60E95 /* XCRemoteSwiftPackageReference "Codextended" */;
+			productName = Codextended;
+		};
 		E3ACE11A249E759E00EEA760 /* URLImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E3ACE119249E759E00EEA760 /* XCRemoteSwiftPackageReference "url-image" */;

@@ -15,8 +15,7 @@ struct RootView: View {
         return Group {
             if user.loggedIn {
                 TweetList()
-            }
-            else {
+            } else {
                 AuthenticationView()
             }
         }

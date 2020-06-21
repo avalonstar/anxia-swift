@@ -15,5 +15,3 @@ struct User: Codable {
     var screenName: String
     var profileImageUrlHttps: String
 }
-
-

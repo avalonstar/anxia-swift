@@ -10,13 +10,13 @@ import SwiftUI
 
 struct TweetDetail: View {
     var tweet: Tweet
-    
+
     var body: some View {
         VStack(alignment: .leading) {
             Text(tweet.fullText)
                 .font(.system(.headline))
                 .fontWeight(.light)
-                
+
             Text(tweet.user.name)
                 .bold()
                 .padding(.top)

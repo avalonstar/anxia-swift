@@ -26,6 +26,6 @@ struct TweetForm: View {
 
 struct TweetForm_Previews: PreviewProvider {
     static var previews: some View {
-        TweetForm()
+        TweetForm().environment(\.colorScheme, .dark)
     }
 }

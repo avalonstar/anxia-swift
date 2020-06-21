@@ -10,7 +10,7 @@ import SwiftUI
 
 struct AuthenticationButton: View {
     var action: () -> Void
-    
+
     var body: some View {
         Button(action: self.action) {
             Text("Sign in with Twitter")

@@ -6,10 +6,9 @@
 //  Copyright © 2020 Avalonstar Inc. All rights reserved.
 //
 
-import Foundation
-import Combine
-import OAuthSwift
 import Alamofire
+import Combine
+import Foundation
 
 let TWITTER_URL_SCHEME = "anxia"
 
@@ -20,20 +19,20 @@ struct RequestOAuthTokenResponse: Decodable {
 }
 
 struct RequestAccessTokenResponse: Decodable {
-  let oauthToken: String
-  let oauthTokenSecret: String
-  let userId: String
-  let screenName: String
+    let oauthToken: String
+    let oauthTokenSecret: String
+    let userId: String
+    let screenName: String
 }
 
 final class Authentication: ObservableObject {
-    @Published var authUrl: URL? { willSet { self.objectWillChange.send(self) } }
-    @Published var credential: RequestAccessTokenResponse? { willSet { self.objectWillChange.send(self) } }
-    @Published var loggedIn: Bool = false { willSet { self.objectWillChange.send(self) } }
-    @Published var showSheet: Bool = false { willSet { self.objectWillChange.send(self) } }
-    
+    @Published var authUrl: URL? { willSet { objectWillChange.send(self) } }
+    @Published var credential: RequestAccessTokenResponse? { willSet { objectWillChange.send(self) } }
+    @Published var loggedIn: Bool = false { willSet { objectWillChange.send(self) } }
+    @Published var showSheet: Bool = false { willSet { objectWillChange.send(self) } }
+
     let objectWillChange = PassthroughSubject<Authentication, Never>()
-    
+
     var callbackObserver: Any? {
         willSet {
             // We will add and remove this observer on an as-needed basis.
@@ -41,21 +40,13 @@ final class Authentication: ObservableObject {
             NotificationCenter.default.removeObserver(token)
         }
     }
-        
+
     private var accessToken: String?
-    private var handle: OAuthSwiftRequestHandle?
-    private var oauthswift = OAuth1Swift(
-        consumerKey: Constants.API.consumerKey,
-        consumerSecret: Constants.API.consumerSecret,
-        requestTokenUrl: Constants.API.requestTokenUrl,
-        authorizeUrl: Constants.API.authorizeUrl,
-        accessTokenUrl: Constants.API.accessTokenUrl
-    )
-    
+
     func getRequestToken(_ complete: @escaping (RequestOAuthTokenResponse) -> Void) {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        
+
         let parameters = ["callback_url": "\(TWITTER_URL_SCHEME)://"]
         AF.request("https://proxy.anxia.app/auth/request_token", parameters: parameters).validate().responseDecodable(of: RequestOAuthTokenResponse.self, decoder: decoder) { response in
             switch response.result {
@@ -66,8 +57,8 @@ final class Authentication: ObservableObject {
             }
         }
     }
-    
-    func getAccessToken(parameters: [String: String], _ complete: @escaping (RequestAccessTokenResponse) -> Void) {
+
+    func getAccessToken(parameters: [String: String], _: @escaping (RequestAccessTokenResponse) -> Void) {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
 
@@ -75,10 +66,10 @@ final class Authentication: ObservableObject {
             debugPrint(response)
         }
     }
-        
+
     func authenticate() {
-        self.showSheet = true
-        self.getRequestToken() { requestResponse in
+        showSheet = true
+        getRequestToken { requestResponse in
             // Listening for the user login callback.
             self.callbackObserver = NotificationCenter.default.addObserver(forName: .twitterCallback, object: nil, queue: .main) { notification in
                 self.callbackObserver = nil
@@ -88,7 +79,7 @@ final class Authentication: ObservableObject {
                 guard let verifier = url.value(forParameter: "oauth_verifier") else { return }
                 let input = [
                     "oauth_token": requestResponse.oauthToken,
-                    "oauth_verifier": verifier
+                    "oauth_verifier": verifier,
                 ]
                 self.getAccessToken(parameters: input) { accessResponse in
                     self.authUrl = nil
@@ -96,7 +87,7 @@ final class Authentication: ObservableObject {
                     self.loggedIn = true
                 }
             }
-            
+
             // Step 2: Open up the login sheet.
             let urlString = "https://api.twitter.com/oauth/authenticate?oauth_token=\(requestResponse.oauthToken)"
             guard let oauthUrl = URL(string: urlString) else { return }
@@ -105,10 +96,10 @@ final class Authentication: ObservableObject {
             }
         }
     }
-        
+
     func logout() {
-        self.credential = nil
-        self.loggedIn = false
+        credential = nil
+        loggedIn = false
     }
 }
 

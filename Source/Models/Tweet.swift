@@ -14,5 +14,6 @@ struct Tweet: Codable, Identifiable {
     let idStr: String
     let fullText: String
     let truncated: Bool
+    let displayTextRange: [Int]
     let user: User
 }

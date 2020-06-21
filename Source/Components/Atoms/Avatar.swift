@@ -11,7 +11,7 @@ import URLImage
 
 struct Avatar: View {
     var url: URL
-    
+
     var body: some View {
         URLImage(self.url, content: {
             $0.image.resizable().aspectRatio(contentMode: .fit).clipShape(RoundedRectangle(cornerRadius: 4))
