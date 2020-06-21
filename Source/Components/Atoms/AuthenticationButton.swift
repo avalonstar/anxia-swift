@@ -9,22 +9,24 @@
 import SwiftUI
 
 struct AuthenticationButton: View {
+    var action: () -> Void
+    
     var body: some View {
-        Button(action: {}) {
+        Button(action: self.action) {
             Text("Sign in with Twitter")
                 .bold()
                 .foregroundColor(.white)
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(Color("TwitterBlue"))
+                .cornerRadius(4)
+                .padding(.horizontal)
         }
-        .frame(maxWidth: .infinity)
-        .padding()
-        .background(Color("TwitterBlue"))
-        .cornerRadius(4)
-        .padding(.horizontal)
     }
 }
 
 struct AuthenticationButton_Previews: PreviewProvider {
     static var previews: some View {
-        AuthenticationButton()
+        AuthenticationButton(action: { print("Test.") })
     }
 }

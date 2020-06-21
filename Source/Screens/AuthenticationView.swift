@@ -6,25 +6,22 @@
 //  Copyright © 2020 Avalonstar Inc. All rights reserved.
 //
 
-import Alamofire
 import SwiftUI
 
 struct AuthenticationView: View {
+    @EnvironmentObject var user: Authentication
+
     var body: some View {
         VStack {
-            AuthenticationButton().onTapGesture {
-                self.startAuthentication()
-            }
+            AuthenticationButton(action: { self.user.authenticate() })
+        }.sheet(isPresented: self.$user.showSheet) {
+            SafariView(url: self.$user.authUrl)
         }
-    }
-    
-    func startAuthentication() {
-        print("Start Authentication.")
     }
 }
 
 struct AuthenticationView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthenticationView()
+        AuthenticationView().environmentObject(Authentication())
     }
 }
