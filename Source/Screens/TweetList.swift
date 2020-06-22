@@ -22,7 +22,7 @@ struct TweetList: View {
             .navigationBarTitle(Text("Timeline"))
             .navigationBarItems(
                 leading: Button("Menu") { print("Menu") },
-                trailing: Button(action: { self.showingForm.toggle() }) { Text("Tweet") }.sheet(isPresented: $showingForm) { TweetForm() }
+                trailing: Button(action: { self.showingForm.toggle() }) { Image(systemName: "square.and.pencil").imageScale(.large) }.sheet(isPresented: $showingForm) { TweetForm() }
             )
         }
     }
