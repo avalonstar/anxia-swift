@@ -20,7 +20,6 @@ struct AuthenticationButton: View {
                 .padding()
                 .background(Color("TwitterBlue"))
                 .cornerRadius(4)
-                .padding(.horizontal)
         }
     }
 }

@@ -13,9 +13,20 @@ struct AuthenticationView: View {
 
     var body: some View {
         VStack {
-            AuthenticationButton(action: { self.user.authenticate() })
-        }.sheet(isPresented: self.$user.showSheet) {
-            SafariView(url: self.$user.authUrl)
+            Spacer()
+            VStack(alignment: .leading) {
+                Text("Connect and communicate. Without the anxiety of stats.").font(.title)
+            }.padding()
+            Spacer()
+            HStack {
+                Image(systemName: "lock.circle.fill").foregroundColor(Color.gray)
+                Text("Anxia needs permission to access your account.").font(.footnote).foregroundColor(Color.gray)
+            }.padding(.bottom)
+            AuthenticationButton(action: {
+                self.user.authenticate()
+            }).sheet(isPresented: self.$user.showSheet) {
+                SafariView(url: self.$user.authUrl)
+            }.padding(.horizontal)
         }
     }
 }
