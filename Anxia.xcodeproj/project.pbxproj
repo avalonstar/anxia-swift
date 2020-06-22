@@ -29,6 +29,7 @@
 		E3B6FA22249BEFB40068E187 /* TweetDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6FA21249BEFB40068E187 /* TweetDetail.swift */; };
 		E3B6FA27249C25170068E187 /* TweetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6FA26249C25170068E187 /* TweetForm.swift */; };
 		E3B6FA2D249C7A150068E187 /* AuthenticationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B6FA2C249C7A150068E187 /* AuthenticationButton.swift */; };
+		E3FCA1C824A02BCB002468BA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FCA1C724A02BCB002468BA /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		E3B6FA21249BEFB40068E187 /* TweetDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetail.swift; sourceTree = "<group>"; };
 		E3B6FA26249C25170068E187 /* TweetForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetForm.swift; sourceTree = "<group>"; };
 		E3B6FA2C249C7A150068E187 /* AuthenticationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationButton.swift; sourceTree = "<group>"; };
+		E3FCA1C724A02BCB002468BA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				E3942DA9249BE45B0055273C /* TweetRow.swift */,
-				E3B6FA1F249BE8110068E187 /* TweetList.swift */,
 				E3B6FA21249BEFB40068E187 /* TweetDetail.swift */,
 			);
 			path = Home;
@@ -196,9 +197,11 @@
 		E3B6FA25249BF1730068E187 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E3B6FA1F249BE8110068E187 /* TweetList.swift */,
 				E3942D8F249BDE930055273C /* AuthenticationView.swift */,
 				E369B3FA249E8AF300A60E95 /* SafariView.swift */,
 				E369B40C249F2E3600A60E95 /* RootView.swift */,
+				E3FCA1C724A02BCB002468BA /* SettingsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				E3942DA6249BDE930055273C /* SceneDelegate.swift in Sources */,
 				E3B6FA2D249C7A150068E187 /* AuthenticationButton.swift in Sources */,
 				E3B6FA27249C25170068E187 /* TweetForm.swift in Sources */,
+				E3FCA1C824A02BCB002468BA /* SettingsView.swift in Sources */,
 				E3B6FA22249BEFB40068E187 /* TweetDetail.swift in Sources */,
 				E369B3F7249E789400A60E95 /* Avatar.swift in Sources */,
 				E3942DAA249BE45B0055273C /* TweetRow.swift in Sources */,

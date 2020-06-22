@@ -41,8 +41,6 @@ final class Authentication: ObservableObject {
         }
     }
 
-    private var accessToken: String?
-
     func getRequestToken(_ complete: @escaping (RequestOAuthTokenResponse) -> Void) {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
@@ -58,12 +56,17 @@ final class Authentication: ObservableObject {
         }
     }
 
-    func getAccessToken(parameters: [String: String], _: @escaping (RequestAccessTokenResponse) -> Void) {
+    func getAccessToken(parameters: [String: String], _ complete: @escaping (RequestAccessTokenResponse) -> Void) {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
 
         AF.request("https://proxy.anxia.app/auth/access_token", parameters: parameters).validate().responseDecodable(of: RequestAccessTokenResponse.self, decoder: decoder) { response in
-            debugPrint(response)
+            switch response.result {
+            case .success:
+                complete(response.value!)
+            case let .failure(error):
+                print(error)
+            }
         }
     }
 
